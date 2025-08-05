@@ -1,0 +1,39 @@
+https://colab.research.google.com/drive/15DAxaC27V_OLCbcsHbC7VGqZdpuZI5tA#scrollTo=kN3DBnp8c3gl
+https://www.alura.com.br/artigos/python
+https://www.alura.com.br/artigos/lidando-com-datas-e-horarios-no-python
+https://www.alura.com.br/artigos/como-publicar-seu-codigo-python-no-pypi
+https://www.alura.com.br/artigos/ven-poetry-no-python
+Para utilizar o Venv, você deve primeiro criar um novo ambiente virtual. Isso pode ser feito com o comando:
+
+python -m venv nome_do_ambiente
+Esse comando cria uma nova pasta com todos os arquivos necessários para o ambiente virtual. Para ativar o ambiente, em sistemas Unix ou MacOS, use:
+
+source nome_do_ambiente/bin/activate
+No Windows, o comando é:
+
+nome_do_ambiente\Scripts\activate
+
+Para desativar o ambiente virtual, basta usar o comando deactivate. Isso retorna o terminal ao ambiente global do sistema
+
+Por exemplo, pip freeze é um comando que lista todas as dependências instaladas no ambiente virtual junto com suas versões.
+Outro comando essencial é pip freeze > requirements.txt, que redireciona a saída do pip freeze para um arquivo chamado requirements.txt.
+Além desses, comandos como pip install -r requirements.txt permitem instalar todas as dependências listadas em um arquivo requirements.txt de uma só vez, e pip list fornece uma lista detalhada de todos os pacotes instalados, facilitando a gestão e atualização dos pacotes no seu ambiente virtual.
+
+Aqui está um exemplo de como você pode instalar o Poetry usando pipx:
+
+pipx install poetry
+Para atualizar ou desinstalar o Poetry, você pode usar comandos semelhantes:
+
+pipx upgrade poetry
+pipx uninstall poetry
+
+https://peps.python.org/pep-0405/
+https://www.alura.com.br/artigos/o-que-e-git-github
+https://www.alura.com.br/escola-data-science
+https://www.alura.com.br/artigos/data-visualization-conhecendo-bibliotecas-python
+
+https://www.alura.com.br/artigos/pandas-o-que-e-para-que-serve-como-instalar
+https://www.alura.com.br/artigos/python
+https://www.alura.com.br/artigos/o-que-pipeline-dados
+
+
