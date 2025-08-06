@@ -18,17 +18,92 @@ idcPython-alura/
 └── .gitignore                                   # Arquivos ignorados pelo Git
 ```
 
-## 🚀 Aula 1 - Primeiros Passos com Python e Pandas
+## 🚀 Evolução do Aprendizado - Aulas 1 e 2
 
-### 📋 Objetivos da Aula
+### 📋 Aula 1 - Primeiros Passos com Python e Pandas
 
 Na primeira aula da imersão, exploramos os fundamentos do Python para análise de dados, com foco em:
 
-- Introdução ao ambiente Python
-- Manipulação de datas e horários
-- Carregamento e exploração inicial de datasets
-- Primeiras análises com Pandas
-- Limpeza e transformação de dados
+- ✅ Introdução ao ambiente Python
+- ✅ Manipulação de datas e horários
+- ✅ Carregamento e exploração inicial de datasets
+- ✅ Primeiras análises com Pandas
+- ✅ Limpeza e transformação de dados básica
+
+### 🎯 Aula 2 - Aprofundamento em Limpeza e Tratamento de Dados
+
+Na segunda aula, expandimos nossos conhecimentos com técnicas avançadas de tratamento de dados:
+
+- ✅ **Tratamento de valores ausentes (NaN)** com múltiplas estratégias
+- ✅ **Preenchimento por média e mediana** usando `fillna()`
+- ✅ **Forward Fill (ffill)** e **Backward Fill (bfill)** para dados temporais
+- ✅ **Preenchimento personalizado** com valores específicos
+- ✅ **Remoção de linhas com dados ausentes** usando `dropna()`
+- ✅ **Conversão de tipos de dados** para otimização de memória
+- ✅ **Criação de DataFrames de exemplo** para validação de métodos
+
+### 🔄 Comparação da Evolução
+
+| Aspecto | Aula 1 | Aula 2 |
+|---------|--------|--------|
+| **Foco Principal** | Exploração e análise básica | Limpeza e tratamento avançado |
+| **Bibliotecas** | `pandas`, `datetime` | `pandas`, `numpy` |
+| **Tratamento de Dados** | Renomeação e substituição | Múltiplas estratégias para NaN |
+| **Complexidade** | Iniciante | Intermediário |
+| **Técnicas Novas** | `value_counts()`, `replace()` | `fillna()`, `dropna()`, `ffill()`, `bfill()` |
+
+## 🌱 A Importância do Aprendizado Contínuo
+
+### 💡 Reflexões sobre a Evolução
+
+A comparação entre as Aulas 1 e 2 demonstra claramente como o **aprendizado contínuo** é fundamental na jornada de Data Science:
+
+#### 🔍 **Progressão Natural do Conhecimento**
+- **Aula 1**: Estabeleceu as bases com conceitos fundamentais
+- **Aula 2**: Construiu sobre essa base, introduzindo técnicas mais sofisticadas
+- **Resultado**: Cada nova aula amplia o repertório de ferramentas disponíveis
+
+#### 🛠️ **Complexidade Crescente**
+```python
+# Aula 1: Análise básica
+df['senioridade'].value_counts()
+
+# Aula 2: Tratamento avançado de dados ausentes
+df_salarios['salario_media'] = df_salarios['salario'].fillna(df_salarios['salario'].mean().round(2))
+df_temperatura['preenchido_ffill'] = df_temperatura['temperatura'].fillna(method='ffill')
+```
+
+#### 🎯 **Benefícios do Aprendizado Incremental**
+
+1. **Consolidação**: Cada aula reforça conceitos anteriores
+2. **Aplicação Prática**: Novos métodos são aplicados em cenários reais
+3. **Confiança**: Progressão gradual constrói segurança técnica
+4. **Versatilidade**: Múltiplas abordagens para resolver problemas similares
+
+#### 🚀 **Mindset de Crescimento**
+
+> *"O aprendizado em Data Science não é um destino, mas uma jornada contínua. Cada dataset apresenta novos desafios, cada projeto demanda novas soluções."*
+
+**Características do Aprendizado Contínuo em Data Science:**
+- **Adaptabilidade**: Tecnologias e métodos evoluem constantemente
+- **Curiosidade**: Sempre há uma nova biblioteca, técnica ou abordagem para explorar
+- **Prática**: Conhecimento teórico só se consolida com aplicação prática
+- **Comunidade**: Aprender com outros profissionais acelera o desenvolvimento
+
+#### 📈 **Próximos Passos na Jornada**
+
+A evolução das aulas 1 e 2 prepara o terreno para conceitos ainda mais avançados:
+- Visualização de dados interativa
+- Análises estatísticas complexas
+- Machine Learning aplicado
+- Storytelling com dados
+
+### 🎓 **Lições Aprendidas**
+
+1. **Cada conceito é um tijolo**: Construindo uma base sólida passo a passo
+2. **Prática leva à perfeição**: Repetição e aplicação consolidam o aprendizado
+3. **Erros são oportunidades**: Cada desafio enfrentado fortalece o conhecimento
+4. **Comunidade importa**: Compartilhar conhecimento acelera o crescimento de todos
 
 ### 🔍 Dataset Analisado
 
