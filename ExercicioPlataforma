@@ -1,0 +1,23 @@
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Adicionar uma coluna de gênero fictícia para fins de demonstração
+# Em um cenário real, essa informação viria da fonte de dados
+np.random.seed(42) # para reprodutibilidade
+df_limpo['genero'] = np.random.choice(['Masculino', 'Feminino'], size=len(df_limpo))
+
+# Calcular a média salarial por senioridade e gênero
+df_salario_genero = df_limpo.groupby(['senioridade', 'genero'])['usd'].mean().reset_index()
+
+# Definir a ordem das senioridades para o gráfico
+ordem_senioridade = ["junior", "pleno", "senior", "executivo"]
+
+# Criar o gráfico de barras comparando salários por senioridade e gênero
+plt.figure(figsize=(10, 6))
+sns.barplot(data=df_salario_genero, x="senioridade", y="usd", hue="genero", order=ordem_senioridade, palette="viridis")
+
+plt.title("Média Salarial por Senioridade e Gênero")
+plt.xlabel("Senioridade")
+plt.ylabel("Média Salarial Anual (USD)")
+plt.show()

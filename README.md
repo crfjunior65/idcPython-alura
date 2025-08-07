@@ -18,7 +18,7 @@ idcPython-alura/
 └── .gitignore                                   # Arquivos ignorados pelo Git
 ```
 
-## 🚀 Evolução do Aprendizado - Aulas 1 e 2
+## 🚀 Evolução do Aprendizado - Aulas 1, 2 e 3
 
 ### 📋 Aula 1 - Primeiros Passos com Python e Pandas
 
@@ -42,26 +42,41 @@ Na segunda aula, expandimos nossos conhecimentos com técnicas avançadas de tra
 - ✅ **Conversão de tipos de dados** para otimização de memória
 - ✅ **Criação de DataFrames de exemplo** para validação de métodos
 
+### 📊 Aula 3 - Visualização Avançada de Dados
+
+Na terceira aula, demos um salto significativo na apresentação e análise visual dos dados:
+
+- ✅ **Visualização interativa com Plotly** (`plotly.express` e `plotly.graph_objects`)
+- ✅ **Múltiplos tipos de gráficos**: barras, pizza, donut, subplots
+- ✅ **Análise comparativa por países** com destaque para Data Scientists
+- ✅ **Gráficos temáticos personalizados** (tema escuro, cores customizadas)
+- ✅ **Interatividade avançada** com hover templates e formatação
+- ✅ **Storytelling com dados** através de visualizações profissionais
+- ✅ **Análise de distribuição salarial** por diferentes dimensões
+- ✅ **Técnicas de agrupamento e agregação** para insights visuais
+
 ### 🔄 Comparação da Evolução
 
-| Aspecto | Aula 1 | Aula 2 |
-|---------|--------|--------|
-| **Foco Principal** | Exploração e análise básica | Limpeza e tratamento avançado |
-| **Bibliotecas** | `pandas`, `datetime` | `pandas`, `numpy` |
-| **Tratamento de Dados** | Renomeação e substituição | Múltiplas estratégias para NaN |
-| **Complexidade** | Iniciante | Intermediário |
-| **Técnicas Novas** | `value_counts()`, `replace()` | `fillna()`, `dropna()`, `ffill()`, `bfill()` |
+| Aspecto | Aula 1 | Aula 2 | Aula 3 |
+|---------|--------|--------|--------|
+| **Foco Principal** | Exploração e análise básica | Limpeza e tratamento avançado | Visualização e storytelling |
+| **Bibliotecas** | `pandas`, `datetime` | `pandas`, `numpy` | `pandas`, `plotly.express`, `plotly.graph_objects` |
+| **Tratamento de Dados** | Renomeação e substituição | Múltiplas estratégias para NaN | Agrupamento e agregação para visualização |
+| **Complexidade** | Iniciante | Intermediário | Avançado |
+| **Técnicas Novas** | `value_counts()`, `replace()` | `fillna()`, `dropna()`, `ffill()`, `bfill()` | `px.bar()`, `px.pie()`, `go.Figure()`, `make_subplots()` |
+| **Output** | Análises textuais | DataFrames limpos | Gráficos interativos profissionais |
 
 ## 🌱 A Importância do Aprendizado Contínuo
 
 ### 💡 Reflexões sobre a Evolução
 
-A comparação entre as Aulas 1 e 2 demonstra claramente como o **aprendizado contínuo** é fundamental na jornada de Data Science:
+A comparação entre as Aulas 1, 2 e 3 demonstra claramente como o **aprendizado contínuo** é fundamental na jornada de Data Science:
 
 #### 🔍 **Progressão Natural do Conhecimento**
 - **Aula 1**: Estabeleceu as bases com conceitos fundamentais
 - **Aula 2**: Construiu sobre essa base, introduzindo técnicas mais sofisticadas
-- **Resultado**: Cada nova aula amplia o repertório de ferramentas disponíveis
+- **Aula 3**: Elevou o nível com visualizações interativas e storytelling profissional
+- **Resultado**: Cada nova aula amplia exponencialmente o repertório de ferramentas disponíveis
 
 #### 🛠️ **Complexidade Crescente**
 ```python
@@ -71,6 +86,16 @@ df['senioridade'].value_counts()
 # Aula 2: Tratamento avançado de dados ausentes
 df_salarios['salario_media'] = df_salarios['salario'].fillna(df_salarios['salario'].mean().round(2))
 df_temperatura['preenchido_ffill'] = df_temperatura['temperatura'].fillna(method='ffill')
+
+# Aula 3: Visualizações interativas profissionais
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+fig = px.bar(df_grouped, x='pais', y='salario_medio', 
+             title='Salário Médio por País com Destaque para Data Scientists',
+             hover_data=['quantidade'])
+fig.show()
 ```
 
 #### 🎯 **Benefícios do Aprendizado Incremental**
@@ -79,6 +104,7 @@ df_temperatura['preenchido_ffill'] = df_temperatura['temperatura'].fillna(method
 2. **Aplicação Prática**: Novos métodos são aplicados em cenários reais
 3. **Confiança**: Progressão gradual constrói segurança técnica
 4. **Versatilidade**: Múltiplas abordagens para resolver problemas similares
+5. **Storytelling**: Capacidade de comunicar insights através de visualizações impactantes
 
 #### 🚀 **Mindset de Crescimento**
 
@@ -92,11 +118,13 @@ df_temperatura['preenchido_ffill'] = df_temperatura['temperatura'].fillna(method
 
 #### 📈 **Próximos Passos na Jornada**
 
-A evolução das aulas 1 e 2 prepara o terreno para conceitos ainda mais avançados:
-- Visualização de dados interativa
-- Análises estatísticas complexas
-- Machine Learning aplicado
-- Storytelling com dados
+A evolução das aulas 1, 2 e 3 prepara o terreno para conceitos ainda mais avançados:
+- ✅ **Visualização de dados interativa** (concluído na Aula 3)
+- 🔄 **Análises estatísticas complexas**
+- 🔄 **Machine Learning aplicado**
+- 🔄 **Storytelling avançado com dados**
+- 🔄 **Dashboards interativos**
+- 🔄 **Análise preditiva**
 
 ### 🎓 **Lições Aprendidas**
 
@@ -210,11 +238,11 @@ df['senioridade'] = df['senioridade'].replace(mapeamento_senioridade)
 
 As próximas aulas da imersão abordarão:
 
-- Visualização de dados com Matplotlib e Seaborn
+- ✅ Visualização de dados com Plotly (concluído na Aula 3)
 - Análises estatísticas mais avançadas
 - Criação de dashboards interativos
 - Machine Learning aplicado aos dados
-- Storytelling com dados
+- Storytelling avançado com dados
 
 ## 📖 Recursos de Aprendizado
 
@@ -260,6 +288,8 @@ Este projeto é desenvolvido para fins educacionais como parte da Imersão Dados
 
 - Participante da Imersão Dados com Python - Alura
 - Data de conclusão da Aula 1: 05/08/2025
+- Data de conclusão da Aula 2: 06/08/2025
+- Data de conclusão da Aula 3: 07/08/2025
 
 ---
 
