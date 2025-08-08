@@ -1,0 +1,13 @@
+# Cria uma Pasta para o projeto e criar um ambiente Virtual.
+python3 -m venv .venv
+source .venv/bin/activate
+# Instala as dependências do projeto.
+pip install -r requirements.txt
+# Inicia o servidor.
+python3 app.py
+# Instala o pacote flask-cors.
+pip install flask-cors
+# Instala o pacote flask-jwt-extended.
+pip install flask-jwt-extended
+# Instala o pacote flask-bcrypt.
+pip install flask-bcrypt
