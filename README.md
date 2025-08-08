@@ -290,6 +290,7 @@ Este projeto é desenvolvido para fins educacionais como parte da Imersão Dados
 - Data de conclusão da Aula 1: 05/08/2025
 - Data de conclusão da Aula 2: 06/08/2025
 - Data de conclusão da Aula 3: 07/08/2025
+- Data de conclusão da Aula 4: 08/08/2025
 
 ---
 
