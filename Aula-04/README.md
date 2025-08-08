@@ -233,6 +233,6 @@ Para dúvidas ou sugestões sobre este projeto, entre em contato através dos ca
 
 ---
 
-**🎉 Parabéns por concluir a Imersão Ciência de Dados com Python!**
+**🎉 Conclui a Imersão Ciência de Dados com Python!**
 
 Este projeto representa não apenas o aprendizado técnico, mas também a capacidade de transformar dados em insights valiosos através de uma aplicação web interativa e acessível.
