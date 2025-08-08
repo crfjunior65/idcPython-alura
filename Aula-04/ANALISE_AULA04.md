@@ -264,4 +264,4 @@ A **Aula 04** representa o **ápice da Imersão**, onde todos os conceitos apren
 
 ---
 
-**🚀 Parabéns, Junior! Você concluiu com sucesso a Imersão Ciência de Dados com Python, criando um projeto profissional que demonstra suas competências técnicas e analíticas!**
+**🚀 Conclui com sucesso a Imersão Ciência de Dados com Python, criando um projeto profissional que demonstra suas competências técnicas e analíticas!**
