@@ -11,3 +11,6 @@ pip install flask-cors
 pip install flask-jwt-extended
 # Instala o pacote flask-bcrypt.
 pip install flask-bcrypt
+
+
+streamlit run app.py
